@@ -1,4 +1,6 @@
-
+"""Una corredora de propiedades en Santiago quiere predecir el precio (en UF) de departamentos. Tienen los siguientes datos:
+datos = {'Superficie_m2': [50, 70, 65, 90, 45], 'Num_Habitaciones': [1, 2, 2, 3, 1], 'Distancia_Metro_km': [0.5, 1.2, 0.8, 0.2, 2.0], 'Precio_UF': [2500, 3800, 3500, 5200, 2100]}
+Construye un modelo de regresión lineal múltiple para predecir el 'Precio_UF' y evalúa su rendimiento."""
 
 import numpy as np
 import pandas as pd
@@ -46,3 +48,4 @@ mae = mean_absolute_error(y_test, y_pred)
 r2  = r2_score(y_test, y_pred)
 print(f"\nMAE: {mae:.2f} UF")
 print(f"R² : {r2:.3f} ({r2*100:.1f}%)")
+
